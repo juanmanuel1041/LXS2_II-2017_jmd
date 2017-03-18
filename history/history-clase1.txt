@@ -1,0 +1,188 @@
+    1  su - soporte 
+    2  ls
+    3  cd Documents/
+    4  mkdir LXS2_II-2017_jmd
+    5  ls
+    6  cd LXS2_II-2017_jmd/
+    7  ls 
+    8  git init 
+    9  sudo apt-get tree
+   10  tree
+   11  apt-get tree
+   12  sudo apt-get tree
+   13  mkdir Academia-UCR
+   14  ls 
+   15  git clone https://github.com/juanmanuel1041/LXS2_II-2017_jmd.git mi-repo-remoto
+   16  cd mi-repo-remoto/
+   17  tree
+   18  git log
+   19  ifconfig >> misc/file1 
+   20  git status 
+   21  git add misc/file1 
+   22  git commit -m "Modificacion desde la casa"
+   23  git status 
+   24  git push -u origin master
+   25  su - soporte
+   26  ls
+   27  cd Documents/LXS2_II-2017_jmd/
+   28  ls
+   29  cd src
+   30  ls
+   31  ./monitor.sh 
+   32  car /tmp/Reporte 
+   33  cat /tmp/Reporte 
+   34  rm /tmp/reporte 
+   35  cd Documents/LXS2_II-2017_jmd/src/
+   36  ./monitor.sh 
+   37  cat /tmp/Reporte 
+   38  ls /tmp/
+   39  rd /tmp/Reporte 
+   40  rm /tmp/Reporte 
+   41  ls /tmp/
+   42  ./monitor.sh 
+   43  clear
+   44  cat /tmp/Reporte 
+   45  git diff monitor.sh
+   46  git commit
+   47  git add monitor.sh 
+   48  git commit
+   49  vim git commit
+   50  clear
+   51  alias
+   52  cd Documents/LXS2_II-2017_jmd/
+   53  ls
+   54  mkdir history
+   55  alias STm='date +%Y%m%d'
+   56  STm
+   57  var_time='STm'
+   58  history > history/history-%var_time
+   59  tree
+   60  history > history/history-$var_time
+   61  tree
+   62  cd history/
+   63  ls
+   64  rm history-STm history-%var_time 
+   65  STm
+   66  var_time='STm'
+   67  history > history/history-$var_time
+   68  cd ..
+   69  history > history/history-$var_time
+   70  tree
+   71  var_time=`STm`
+   72  history > history/history-$var_time
+   73  tree
+   74  cd history/
+   75  rm history-STm 
+   76  tree
+   77  cd ..
+   78  tree
+   79  clear
+   80  tree
+   81  history > history/history-`STm`.log
+   82  alias STm='date +%Y%m%d_%H:%M'
+   83  STm
+   84  history > history/history-`STm`.log
+   85  tree
+   86  history
+   87  q
+   88  clear
+   89  STm
+   90  ls
+   91  reportes () { cd /usr/share/doc; echo "Reporte `date +%Y%m%d`" > /tmp/reporte; date >> /tmp/reporte; pwd >> /tmp/reporte; du -sh . >> /tmp/reporte; }
+   92  reportes
+   93  cat /tmp/reporte 
+   94  clear
+   95  cd ~
+   96  clear
+   97  cd Documents/LXS2_II-2017_jmd/
+   98  ls
+   99  cd src/
+  100  ls
+  101  ls -a
+  102  echo '#!/bin/bash' > monitor.sh
+  103  cat monitor.sh 
+  104  echo 'cd /usr/share/doc' >> monitor.sh 
+  105  echo 'echo Reporte >> /tmp/Reporte' monitor.sh 
+  106  echo 'echo Reporte: >> /tmp/Reporte' monitor.sh 
+  107  echo 'echo Reporte: >> /tmp/Reporte' >> monitor.sh 
+  108  echo 'date Reporte: >> /tmp/Reporte' >> monitor.sh 
+  109  echo 'pwd Reporte: >> /tmp/Reporte' >> monitor.sh 
+  110  echo 'du Reporte: >> /tmp/Reporte' >> monitor.sh 
+  111  ls
+  112  vim monitor.sh 
+  113  chmod u+x monitor.sh 
+  114  ls -l
+  115  ./ monitor.sh 
+  116  ./monitor.sh 
+  117  ls /tmp/
+  118  cat /tmp/Reporte 
+  119  vim monitor.sh 
+  120  clear
+  121  git status 
+  122  dit add monitor.sh 
+  123  git add monitor.sh 
+  124  git status
+  125  git commit -m "Creacon script monitoreo"
+  126  git push origin master
+  127  git status
+  128  clear
+  129  cd
+  130  ls
+  131  cd Templates/
+  132  cd ..
+  133  mkdir Test
+  134  cd Test/
+  135  cd
+  136  cd Documents/LXS2_II-2017_jmd/src/
+  137  vim monitor.sh 
+  138  cd Documents/LXS2_II-2017_jmd/src/
+  139  git commit monitor.sh 
+  140  git commit 
+  141  git log
+  142  git push origin maste
+  143  git push origin master
+  144  git config --global core.editor "vim"
+  145  git commit 
+  146  clear
+  147  vim monitor.sh 
+  148  ./ monitor.sh 
+  149  ./monitor.sh 
+  150  git commit 
+  151  clear
+  152  git status 
+  153  git commit 
+  154  git config 
+  155  git push origin master
+  156  clear
+  157  ls
+  158  chmod u+x parametros.sh 
+  159  ./parametros.sh 
+  160  ./parametros.sh  j perro mama
+  161  ./parametros.sh  j perro
+  162  ./parametros.sh  j 
+  163  ./parametros.sh  
+  164  git add parametros.sh 
+  165  git commit -m "inicio del script de parametros"
+  166  git push origin master
+  167  ./parametros.sh  perro fsdfsdfs fdsfsd
+  168  ./parametros.sh  perro fsdfsdf
+  169  ./parametros.sh  fsddsfsd perro
+  170  ./parametros.sh  fsddsfsd perro errew
+  171  git add parametros.sh 
+  172  git commit -m "version 2 del if"
+  173  git push origin master 
+  174  clear
+  175  lsb_release -a
+  176  lsb_release -r
+  177  lsb_release -r | awk '{print $2}'
+  178  cd Documents/LXS2_II-2017_jmd/src/
+  179  ls
+  180  vim parametros.sh
+  181  poweroff
+  182  hitory
+  183  history
+  184  cd Documents/LXS2_II-2017_jmd/history/
+  185  ls
+  186  pws
+  187  pwd
+  188  history > history-clase1.txt
