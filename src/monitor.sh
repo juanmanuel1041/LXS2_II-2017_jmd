@@ -5,21 +5,26 @@
 
 
 #Ambos son equivalentes
-current_pwd=`pwd`
-current_pwd=$(pwd) 
 
 
+#read -p "Ingrese ruta a respaldar: " dir
+
+echo "ingrese ruta a respaldar:"
+read dir
 
 
-cd /usr/share/doc
-echo Reporte: >> /tmp/Reporte
+echo "Reporte:" >> /tmp/Reporte
 date >> /tmp/Reporte
-pwd >> /tmp/Reporte
-du -sh >> /tmp/Reporte
+echo $dir >> /tmp/Reporte
+du -sh $dir  >> /tmp/Reporte
 
 
 
-cd $current_pwd
+echo Path de ejecucion `pwd`
+
+
+
+exit 0
 
 
 
